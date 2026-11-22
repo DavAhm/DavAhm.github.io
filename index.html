@@ -4,252 +4,236 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Davide Ahmar — Cognitive neuroscientist researching multimodal brain–body mechanisms in social interaction. PhD candidate at Humboldt University of Berlin &amp; Max Planck Institute for Human Development.">
   <title>Davide Ahmar | Cognitive Neuroscience</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description"
+    content="Davide Ahmar — PhD candidate in cognitive neuroscience (IMPRS LIFE, Humboldt University of Berlin & Max Planck Institute for Human Development) studying multimodal brain–body dynamics of social interaction.">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 
 <body>
 
-  <!-- ==================== NAVIGATION ==================== -->
-  <nav class="site-nav" id="nav" aria-label="Main navigation">
-    <div class="container nav-inner">
-      <a href="#hero" class="nav-brand">Davide Ahmar</a>
-      <button class="nav-toggle" aria-label="Toggle menu"
-        onclick="document.querySelector('.nav-links').classList.toggle('open')">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </div>
+  <header class="topbar topbar--over">
+    <div class="wrap topbar-inner">
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="index.html" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </nav>
-
-  <!-- ==================== HERO ==================== -->
-  <header class="hero" id="hero">
-    <div class="hero-bg" role="img" aria-label="Researcher observing a great ape"></div>
-    <div class="hero-content">
-      <img src="materials/AboutMe/Profile Pic 2026.png" alt="Davide Ahmar headshot" class="hero-headshot" width="190"
-        height="190">
-      <h1 class="hero-name">DAVIDE AHMAR</h1>
-      <p class="hero-tagline">cognitive neuroscience · multimodal interaction</p>
-    </div>
-    <div class="scroll-indicator" aria-hidden="true"><span></span></div>
   </header>
 
-  <!-- ==================== ABOUT ==================== -->
-  <section class="about" id="about">
-    <div class="container fade-in">
-      <h2 class="section-title">About Me</h2>
-      <hr class="section-rule">
-      <div class="about-grid">
-        <div class="about-media">
-          <img src="materials/AboutMe/MultimodalAnimation.gif"
-            alt="Multimodal research animation showing synchronized neural, behavioural, and physiological signals"
-            loading="lazy">
-        </div>
-        <div class="about-text">
-          <p>
-            My name is Davide Ahmar, and I am a PhD candidate in the
-            <strong>IMPRS LIFE</strong> program, working with
-            <strong>Prof. Marcel Brass</strong> (Humboldt University of Berlin) and
-            <strong>Dr. Michael Gaebler</strong> (Max Planck Institute for Human Development)
-            in Berlin (2026–2029). My research focuses on the multimodal processes that
-            support interpersonal coordination and affiliation in face-to-face interactions
-            and immersive virtual reality environments, combining neural, behavioural, and
-            physiological measures.
-          </p>
-          <p>
-            I obtained a joint Bachelor's degree in Cognitive Neuroscience and Psychology
-            from the <strong>University of Manchester</strong> (2018–2022) and a Research
-            Master's degree in Cognitive Neuroscience from the <strong>Donders Institute</strong>
-            in Nijmegen (2022–2024). During my undergraduate training, I also worked at the
-            <strong>Italian Institute of Technology</strong> in Rome (2020–2021) with
-            Dr. Giacomo Novembre, investigating spontaneously emerging patterns of neural
-            and behavioural synchrony in interacting dyads. For my MSc research, I worked
-            with Prof. Ivan Toni on an interdisciplinary project that used live
-            neurostimulation to enhance the effectiveness of exposure therapy for fear of
-            public speaking. In this context, I developed a portable multimodal system to
-            record and quantify subtle avoidance behaviours during the patients' live speeches.
-          </p>
-          <p>
-            Following my MSc, I moved to the field of animal cognition working at
-            <strong>Max Planck Institute for Evolutionary Anthropology</strong> (2025–2026),
-            where I conducted a touchscreen-based study on mental simulation abilities in
-            zoo-housed great apes with Dr. Christoph Völter. Over the last years, I have
-            also been a core member of <a href="https://envisionbox.org" target="_blank" rel="noopener">EnvisionBOX</a>,
-            a didactical open-science platform dedicated
-            to sharing tools and methods for multimodal research on interaction and
-            communication.
-          </p>
-        </div>
+  <section class="hero">
+    <div class="hero-blur" aria-hidden="true"></div>
+    <canvas class="hero-signals" aria-hidden="true"></canvas>
+    <div class="hero-bg" role="img" aria-label="Davide Ahmar watching an orangutan through the glass of its enclosure">
+    </div>
+    <div class="wrap hero-inner">
+      <img class="hero-photo" src="materials/AboutMe/Profile Pic 2026.png" alt="Portrait of Davide Ahmar" width="190"
+        height="190">
+      <div>
+        <h1>Davide Ahmar</h1>
+        <p class="hero-tagline">Brains, Bodies &amp; Social Interactions</p>
+        <p class="hero-role">PhD candidate · IMPRS LIFE · Max Planck Institute for Human Development &amp; Humboldt
+          University of Berlin</p>
       </div>
     </div>
+    <a class="scroll-down" href="#about" aria-label="Scroll to About me">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </a>
   </section>
 
-  <!-- ==================== RESEARCH ==================== -->
-  <section class="research" id="research">
-    <div class="container fade-in">
-      <h2 class="section-title">Research</h2>
-      <hr class="section-rule">
-      <div class="research-content">
-        <p>
-          My work sits at the intersection of <strong>social neuroscience</strong>,
-          <strong>movement science</strong>, and <strong>multimodal methods</strong>.
-          I am broadly interested in how people coordinate their bodies and brains
-          during real-world social encounters — from subtle postural adjustments and
-          gaze patterns to large-scale neural synchrony between interacting individuals.
-        </p>
-        <p>
-          During my undergraduate internship at the Italian Institute of Technology,
-          I contributed to research demonstrating that spontaneous body movements
-          synchronise between interacting partners when visual contact is present,
-          and that such behavioural synchrony predicts the emergence of interpersonal
-          neural synchrony (EEG hyperscanning). My master's research took an applied
-          turn: combining EEG, motion tracking, and transcranial electrical stimulation
-          in a clinical context to target avoidance behaviours in social anxiety.
-        </p>
-        <p>
-          At the Max Planck Institute for Evolutionary Anthropology, I broadened my
-          comparative perspective by studying mental simulation and anticipation
-          in great apes using touchscreen paradigms.
-        </p>
-        <p>
-          In my upcoming PhD, I plan to investigate the <strong>multimodal
-            brain–body dynamics</strong> of face-to-face interaction, combining
-          neural (EEG), physiological (ECG, EDA, respiration), and behavioural
-          (motion capture, eye tracking) measures in both naturalistic and
-          immersive virtual-reality settings. A key goal is to understand how
-          these inter-personal coupling processes relate to social bonding,
-          affiliation, and emotion regulation.
-        </p>
-      </div>
+  <main>
+    <!-- ===== 1. Who I am & interests ===== -->
+    <section class="section" id="about">
+      <div class="wrap about-intro">
+        <div>
+          <p class="eyebrow">About me</p>
+          <p class="lead">
+            I am a PhD candidate at the Max Planck Institute for Human Development in Berlin. <br> I study how the
+            people
+            around us shape
+            what we perceive, decide and feel, and how brains and bodies align during social interactions.
+          </p>
+          <p class="lead-sub">
+            My work intersects social-affective-cognitive neuroscience, and multimodal methods.
+            <br>At a theoretical level, I am interested in the neuro-cognitive processes that underpin our capacity to
+            understand and interact with each other.
+            <br>At a methodological level, I combine naturalistic (face-to-face) and controlled
+            (immersive virtual reality) experimental settings with multimodal recordings (EEG, eye-tracking, video,
+            audio,
+            motion-capture, physiological signals) to capture the richness of intra- and inter-personal brain-body
+            dynamics.
 
-      <div class="research-themes">
-        <div class="theme-card">
-          <h3>Interpersonal Coordination</h3>
-          <p>Neural and behavioural synchrony in dyadic interaction</p>
-        </div>
-        <div class="theme-card">
-          <h3>Multimodal Methods</h3>
-          <p>Combining EEG, motion capture, physiology &amp; eye tracking</p>
-        </div>
-        <div class="theme-card">
-          <h3>Emotion in Brain &amp; Body</h3>
-          <p>Affective processes linking neural, autonomic, and motor systems</p>
-        </div>
-        <div class="theme-card">
-          <h3>Comparative Cognition</h3>
-          <p>Visual simulation and anticipation in great apes</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== PUBLICATIONS ==================== -->
-  <section class="publications" id="publications">
-    <div class="container fade-in">
-      <h2 class="section-title">Publications</h2>
-      <hr class="section-rule">
-      <div class="pub-list">
-
-        <div class="pub-item">
-          <p>
-            Koul, A., <strong>Ahmar, D.</strong>, Iannetti, G. D., &amp; Novembre, G. (2023).
-            <span class="pub-title">Spontaneous dyadic behavior predicts the emergence of interpersonal neural
-              synchrony.</span>
-            <span class="pub-journal">NeuroImage, 277,</span> 120233.
-            <br>
-            <a class="pub-doi" href="https://doi.org/10.1016/j.neuroimage.2023.120233" target="_blank" rel="noopener">
-              doi:10.1016/j.neuroimage.2023.120233
-            </a>
           </p>
         </div>
 
-        <div class="pub-item">
+        <!-- Updates: newest first. Copy an <li class="update"> block to add one. -->
+        <aside class="updates" aria-labelledby="updates-title">
+          <h2 class="updates-title" id="updates-title">Updates</h2>
+          <ul class="updates-list">
+            <li class="update">
+              <a class="update-thumb" href="https://envisionbox.org/summerschool2026.html" target="_blank"
+                rel="noopener" tabindex="-1" aria-hidden="true"><img
+                  src="https://envisionbox.org/images/MDIG_6-3-2026.png" alt="" loading="lazy"></a>
+              <div>
+                <p class="update-date">July 2026</p>
+                <p class="update-title"><a href="https://envisionbox.org/summerschool2026.html" target="_blank"
+                    rel="noopener">Co-organizer & speaker at the MDIG2026 summer school in Tilburg </a></p>
+              </div>
+            </li>
+            <li class="update">
+              <a class="update-thumb" href="https://www.imprs-life.mpg.de/person/160104/2813" target="_blank"
+                rel="noopener" tabindex="-1" aria-hidden="true"><img class="thumb-left"
+                  src="materials/AboutMe/imprs_LIFE_logo.png" alt="" loading="lazy"></a>
+              <div>
+                <p class="update-date">May 2026</p>
+                <p class="update-title"><a href="https://www.imprs-life.mpg.de/person/160104/2813" target="_blank"
+                    rel="noopener">Started my PhD in the IMPRS LIFE programme in Berlin</a></p>
+              </div>
+            </li>
+            <li class="update">
+              <a class="update-thumb"
+                href="https://www.leibniz-zas.de/de/forschung/forschungsbereiche/details-events/events/multimodal-mob"
+                target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img
+                  src="materials/Updates/ZAS_logo.png" alt="" loading="lazy"></a>
+              <div>
+                <p class="update-date">March 2026</p>
+                <p class="update-title"><a
+                    href="https://www.leibniz-zas.de/de/forschung/forschungsbereiche/details-events/events/multimodal-mobile-lab"
+                    target="_blank" rel="noopener">Talk at the Leibniz-Centre General Linguistics (ZAS), Berlin, on the
+                    Mobile Multimodal Lab</a></p>
+              </div>
+            </li>
+            <li class="update">
+              <a class="update-thumb" href="https://ukb.nl/en/news/shortlist-leo-waaijers-open-science-award-2025/"
+                target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img
+                  src="materials/Updates/UKB_logo.png" alt="" loading="lazy"></a>
+              <div>
+                <p class="update-date">October 2025</p>
+                <p class="update-title"><a href="https://ukb.nl/en/news/shortlist-leo-waaijers-open-science-award-2025/"
+                    target="_blank" rel="noopener">EnvisionBOX shortlisted for the Leo Waaijers Open Science Award
+                    2025</a></p>
+              </div>
+            </li>
+            <li class="update">
+              <a class="update-thumb" href="projects.html#great-apes" tabindex="-1" aria-hidden="true"><img
+                  class="thumb-left" src="materials/Research/MPI-EVA_Logo_Web_EN.svg" alt="" loading="lazy"></a>
+              <div>
+                <p class="update-date">September 2025</p>
+                <p class="update-title"><a href="projects.html#great-apes">Joined the Max Planck Institute for
+                    Evolutionary Anthropology in Leipzig to study visual simulation in great apes</a></p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== 2. Bio ===== -->
+    <section class="section" id="bio">
+      <div class="wrap">
+        <h2 class="section-title">Bio</h2>
+        <div class="bio">
           <p>
-            Koul, A., <strong>Ahmar, D.</strong>, Iannetti, G. D., &amp; Novembre, G. (2023).
-            <span class="pub-title">Interpersonal synchronization of spontaneously generated body movements.</span>
-            <span class="pub-journal">iScience, 26(2),</span> 106104.
-            <br>
-            <a class="pub-doi" href="https://doi.org/10.1016/j.isci.2023.106104" target="_blank" rel="noopener">
-              doi:10.1016/j.isci.2023.106104
-            </a>
+            I am originally from Rome, Italy.
+            I completed my BSc in Cognitive Neuroscience and Psychology (dual-honours) at the University of Manchester.
+            During my degree I also spent a year at the Italian Institute of Technology in Rome, working on an
+            hyperscanning
+            study on interpersonal behavioral and neural synchrony.
+          <p>
+            I then completed a Research Master's in Cognitive Neuroscience at the Donders Institute in Nijmegen,
+            where I developed multimodal measures of subtle avoidance during exposure therapy
+            for fear of public speaking. <br>
+          </p>
+          <p>
+            After my MSc, I moved to the Max Planck Institute for Evolutionary
+            Anthropology in Leipzig for a brief period to work on a comparative study on great apes.
+          </p>
+          <p>
+            Since 2026 I have been a PhD candidate in the IMPRS LIFE programme, based at the Max Planck Institute for
+            Human Development and Humboldt University of Berlin, where I use virtual reality and multimodal
+            recordings to study social influence. <br> <br> I am also a core member of
+            <a href="https://envisionbox.org" target="_blank" rel="noopener">EnvisionBOX</a>, an open-science
+            platform for learners of multimodal data analysis.
           </p>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== CONTACT ==================== -->
-  <section class="contact" id="contact">
-    <div class="container fade-in">
-      <h2 class="section-title">Contact</h2>
-      <hr class="section-rule">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p>
-            I am always happy to connect with fellow researchers, potential
-            collaborators, and anyone interested in multimodal neuroscience.
-            Feel free to reach out through any of the channels below.
-          </p>
-        </div>
-        <div class="contact-links">
-
-          <!-- Email -->
-          <a class="contact-link" href="mailto:d.ahmar@donders.ru.nl" id="contact-email">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
-            </svg>
-            d.ahmar@donders.ru.nl
-          </a>
-
-          <!-- GitHub -->
-          <a class="contact-link" href="https://github.com/DavAhm" target="_blank" rel="noopener" id="contact-github">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.75c0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z" />
-            </svg>
-            GitHub
-          </a>
-
-          <!-- Google Scholar -->
-          <a class="contact-link" href="https://scholar.google.com/citations?user=PLACEHOLDER" target="_blank"
-            rel="noopener" id="contact-scholar">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-2a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM1 8l11-7 11 7v2H1V8z" />
-            </svg>
-            Google Scholar
-          </a>
-
-          <!-- EnvisionBOX -->
-          <a class="contact-link" href="https://envisionbox.org" target="_blank" rel="noopener"
-            id="contact-envisionbox">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 15h14v2H5zm0-4h14v2H5zm0-4h14v2H5z" />
-            </svg>
-            EnvisionBOX
-          </a>
-
+        <div class="btn-row">
+          <a class="btn btn--solid" href="projects.html">See my projects</a>
+          <a class="btn" href="cv.html">Read my CV</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Davide Ahmar. Built for GitHub Pages.</p>
+    <!-- ===== 3. Affiliations ===== -->
+    <section class="section" id="affiliations">
+      <div class="wrap">
+        <h2 class="section-title">Affiliations</h2>
+        <h3 class="logo-group">Current</h3>
+        <div class="logos">
+          <a class="logo-tile" href="https://www.imprs-life.mpg.de/" target="_blank" rel="noopener" title="IMPRS LIFE">
+            <img src="materials/AboutMe/imprs_LIFE_logo.png" alt="IMPRS LIFE" loading="lazy">
+          </a>
+          <a class="logo-tile" href="https://www.mpib-berlin.mpg.de/en" target="_blank" rel="noopener"
+            title="Max Planck Institute for Human Development">
+            <img class="logo-whiten" src="materials/AboutMe/MPIB_Logo.png"
+              alt="Max Planck Institute for Human Development" loading="lazy">
+          </a>
+          <a class="logo-tile" href="https://www.hu-berlin.de/en" target="_blank" rel="noopener"
+            title="Humboldt University of Berlin">
+            <img src="materials/Research/HU_Logo.png" alt="Humboldt University of Berlin" loading="lazy">
+          </a>
+          <a class="logo-tile" href="https://social-intelligence-group.github.io/" target="_blank" rel="noopener"
+            title="Social Intelligence Lab">
+            <img src="materials/Research/SocInt_logo.png" alt="Social Intelligence Lab" loading="lazy">
+          </a>
+          <a class="logo-tile" href="https://www.cbs.mpg.de/departments/neurology/mind-body-emotion" target="_blank"
+            rel="noopener" title="Mind Body Emotion group">
+            <img src="materials/Research/MBE_logo.webp" alt="Mind Body Emotion group" loading="lazy">
+          </a>
+          <a class="logo-tile" href="https://envisionbox.org" target="_blank" rel="noopener" title="EnvisionBOX">
+            <img src="materials/Research/EnvisionBox_New_Logo_Black.jpg" alt="EnvisionBOX" loading="lazy">
+          </a>
+        </div>
+        <h3 class="logo-group">Previous</h3>
+        <div class="logos">
+          <a class="logo-tile" href="https://www.eva.mpg.de/" target="_blank" rel="noopener"
+            title="Max Planck Institute for Evolutionary Anthropology">
+            <img src="materials/Research/MPI-EVA_Logo_Web_EN.svg"
+              alt="Max Planck Institute for Evolutionary Anthropology" loading="lazy">
+          </a>
+          <a class="logo-tile" href="https://www.ru.nl/en/donders-institute" target="_blank" rel="noopener"
+            title="Donders Institute, Radboud University">
+            <img src="materials/Research/DONDERS_LOGO_RGB_large.png.webp" alt="Donders Institute, Radboud University"
+              loading="lazy">
+          </a>
+          <a class="logo-tile" href="https://www.iit.it/" target="_blank" rel="noopener"
+            title="Italian Institute of Technology">
+            <img src="materials/Research/IIT_Logo.png" alt="Italian Institute of Technology" loading="lazy">
+          </a>
+          <a class="logo-tile" href="https://www.manchester.ac.uk/" target="_blank" rel="noopener"
+            title="The University of Manchester">
+            <img src="materials/Research/Manchster_Uni%20Logo.jpeg" alt="The University of Manchester" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>&copy; <span data-year>2026</span> Davide Ahmar</span>
+      <a href="mailto:ahmar@mpib-berlin.mpg.de">ahmar@mpib-berlin.mpg.de</a>
     </div>
   </footer>
 
+  <script src="assets/site.js"></script>
+  <script src="assets/hero-signals.js"></script>
 </body>
 
 </html>
